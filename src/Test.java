@@ -1,4 +1,4 @@
-public class Test {
+public class Test implements TestInterface {
   public static void main(String[] args) {
     //    int a = 20;
     //    int b = 30;
@@ -45,5 +45,26 @@ public class Test {
 //    short sVal = 10;
 //    short result = (short)(sVal + 10);
 //    System.out.println(result);
+
+//    float myFloat = 9.75f;
+//
+//    float anotherFloat = myFloat * 2;
+//
+////    System.out.println("Original Float Value: " + myFloat);
+//    System.out.println("Original Float Value: " + (int)myFloat);
+////    System.out.println("Calculated Float Value: " + anotherFloat);
+//    System.out.println("Calculated Float Value: " + (byte)anotherFloat);
+
+//    boolean isTrue = false;
+//
+//    if (isTrue) {
+//      System.out.println("이건트루입니다.");
+//    } else {
+//      System.out.println("이건펄스입니다.");
+    }
+
+  @Override
+  public void test() {
+
   }
 }
