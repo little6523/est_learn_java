@@ -117,8 +117,52 @@ public class Test {
     //    System.out.println(arr3[0]);
     // --------------------------------------------실습 12--------------------------------
     // --------------------------------------------실습 13--------------------------------
-
+    //    int positive = 10;
+    //    int negative = -10;
+    //
+    //    System.out.println("양의 부호 연산 적용: "+ (+positive));
+    //    System.out.println("음의 부호 연산 적용: "+ (-positive));
+    //    System.out.println("음의 부호 연산자로 부호 반전: "+ (+negative));
+    //    System.out.println("음의 부호 연산자로 다시 부호 반전: "+ (-negative));
     // --------------------------------------------실습 13--------------------------------
+    // --------------------------------------------실습 14--------------------------------
+    //    int x = 5;
+    //    int y = 5;
+    //
+    //    System.out.println("전위 증가 연산자: " + (++x));
+    //    System.out.println("후위 증가 연산자: " + (y++));
+    //
+    //    System.out.println("==================");
+    //    System.out.println("x는 " + x);
+    //    System.out.println("y는 " + y);
+    //
+    //    System.out.println("==================");
 
+    //    int a = 100;
+    //    int b = 100;
+    //
+    //    System.out.println("전위 감소 연산자: " + (--a));
+    //    System.out.println("후위 감소 연산자: " + (b--));
+    //    System.out.println("전위 감소 연산자: " + (--a));
+    //    System.out.println("후위 감소 연산자: " + (b--));
+    //    System.out.println("전위 감소 연산자: " + (--a));
+    //    System.out.println("후위 감소 연산자: " + (b--));
+    // --------------------------------------------실습 14--------------------------------
+    boolean isRaining = true;
+
+    if (isRaining) {
+      System.out.println("하늘에서 비가내려와요");
+    }
+    if (!isRaining) {
+      System.out.println("김태희가 안옵니다");
+    }
+
+    boolean isSunny = false;
+
+    if (!isSunny) {
+      System.out.println("날씨가 맑아요");
+    } else {
+      System.out.println("집에서 쉬어야죠.");
+    }
   }
 }
