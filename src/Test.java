@@ -161,73 +161,109 @@ public class Test {
     //        (a > b) ? "a is greater than b" : (a == b) ? "a and b are equal" : "a is less than b";
     // --------------------------------------------실습 8--------------------------------
     // --------------------------------------------실습 9--------------------------------
-    int x = 10;
-    if (x > 0) {
-      System.out.println("x는 양수입니다.(if)");
-    } else if (x < 0) {
-      System.out.println("x는 음수입니다.");
-    } else {
-      System.out.println("x는 0입니다.");
-    }
+    //    int x = 10;
+    //    if (x > 0) {
+    //      System.out.println("x는 양수입니다.(if)");
+    //    } else if (x < 0) {
+    //      System.out.println("x는 음수입니다.");
+    //    } else {
+    //      System.out.println("x는 0입니다.");
+    //    }
+    //    //
     // ###########################################################################################
-    String res1 = (x > 0) ? "x는 양수입니다.(삼항)" : ((x < 0) ? "x는 음수입니다." : "x는 0입니다.");
-    System.out.println(res1);
-
-    int score = 75;
-    if (score >= 90) {
-      System.out.println("A");
-    } else if (score >= 80 && score < 90) {
-      System.out.println("B");
-    } else if (score >= 70 && score < 80) {
-      System.out.println("C");
-    } else if (score >= 60 && score < 70) {
-      System.out.println("D");
-    } else {
-      System.out.println("F");
-    }
-
+    //    String res1 = (x > 0) ? "x는 양수입니다.(삼항)" : ((x < 0) ? "x는 음수입니다." : "x는 0입니다.");
+    //    System.out.println(res1);
+    //
+    //    int score = 75;
+    //    if (score >= 90) {
+    //      System.out.println("A");
+    //    } else if (score >= 80 && score < 90) {
+    //      System.out.println("B");
+    //    } else if (score >= 70 && score < 80) {
+    //      System.out.println("C");
+    //    } else if (score >= 60 && score < 70) {
+    //      System.out.println("D");
+    //    } else {
+    //      System.out.println("F");
+    //    }
+    //
+    //    //
     // ###########################################################################################
-
-    int year = 2023;
-    if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
-      System.out.println("윤년입니다.");
-    } else {
-      System.out.println("윤년이 아닙니다.");
-    }
-
+    //
+    //    int year = 2023;
+    //    if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+    //      System.out.println("윤년입니다.");
+    //    } else {
+    //      System.out.println("윤년이 아닙니다.");
+    //    }
+    //
+    //    //
     // ###########################################################################################
-
-    int a = 10;
-    int b = 20;
-    int c = 30;
-
-    int max = 0;
-    if (a > b) {
-      if (a > c) {
-        max = a;
-      } else {
-        max = c;
-      }
-    } else {
-      if (b > c) {
-        max = b;
-      } else {
-        max = c;
-      }
-    }
-    System.out.println(max);
-
+    //
+    //    int a = 10;
+    //    int b = 20;
+    //    int c = 30;
+    //
+    //    int max = 0;
+    //    if (a > b) {
+    //      if (a > c) {
+    //        max = a;
+    //      } else {
+    //        max = c;
+    //      }
+    //    } else {
+    //      if (b > c) {
+    //        max = b;
+    //      } else {
+    //        max = c;
+    //      }
+    //    }
+    //    System.out.println(max);
+    //
+    //    //
     // ###########################################################################################
-
-    int passScore = 60;
-    int myScore = 75;
-    if (myScore >= passScore) {
-      System.out.println("합격입니다.(if)");
-    } else {
-      System.out.println("불합격입니다.(if)");
-    }
-    String res2 = (myScore >= passScore) ? "합격입니다.(삼항)" : "불합격입니다.(삼항)";
+    //
+    //    int passScore = 60;
+    //    int myScore = 75;
+    //    if (myScore >= passScore) {
+    //      System.out.println("합격입니다.(if)");
+    //    } else {
+    //      System.out.println("불합격입니다.(if)");
+    //    }
+    //    String res2 = (myScore >= passScore) ? "합격입니다.(삼항)" : "불합격입니다.(삼항)";
 
     // --------------------------------------------실습 9--------------------------------
+    // --------------------------------------------실습 10--------------------------------
+    //    int a = 10;
+    //    int b = 5;
+    //
+    //    boolean result1 = (a > 5) && (b < 10);
+    //    boolean result2 = (a > 5) || (b > 10);
+    //    boolean result3 = !(a > 5);
+    //
+    //    int three = 3;
+    //    int five = 5;
+    //    int two = 2;
+    //
+    //    boolean result = (five > three) || (five < two) && (five < three);
+    //    System.out.println(result);
+    // --------------------------------------------실습 10--------------------------------
+    // --------------------------------------------실습 11--------------------------------
+    boolean x = true;
+    boolean y = false;
+    boolean z = true;
+    if (x && !y) {
+      System.out.println("조건 1 충족");
+    }
+    if((y && z) || (!x && !z)){
+      System.out.println("조건 2 충족");
+    }
+    if (x || y || z) {
+      System.out.println("적어도 하나는 참");
+    }
+    if (!x && !y && !z) {
+      System.out.println("모두 거짓");
+    }
+    // --------------------------------------------실습 11--------------------------------
   }
 }
