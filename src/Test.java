@@ -117,20 +117,117 @@ public class Test {
     //    System.out.println(0 ^ ~0);
     // --------------------------------------------실습 6--------------------------------
     // --------------------------------------------실습 7--------------------------------
-    int score = 95;
-    char grade = (score > 90) ? 'A' : 'B';
-
-    String grade1 = "";
-
-    // score는 95점이고, 5의 배수이면 "good" 아니라면 "bad"
-    grade1 = ((score > 90) && (score % 5 == 0)) ? "good" : "bad";
-    System.out.println(grade1);
-
-    if (score > 90) {
-      grade = 'A';
-    } else {
-      grade = 'B';
-    }
+    //    int score = 95;
+    //    char grade = (score > 90) ? 'A' : 'B';
+    //
+    //    String grade1 = "";
+    //
+    //    // score는 95점이고, 5의 배수이면 "good" 아니라면 "bad"
+    //    grade1 = ((score > 90) && (score % 5 == 0)) ? "good" : "bad";
+    //    System.out.println(grade1);
+    //
+    //    if (score > 90) {
+    //      grade = 'A';
+    //    } else {
+    //      grade = 'B';
+    //    }
     // --------------------------------------------실습 7--------------------------------
+    // --------------------------------------------실습 8--------------------------------
+    //    int number = 10;
+    //
+    //    if (number > 10) {
+    //      System.out.println("number는 10보다 큽니다");
+    //    } else if (number < 10) {
+    //      System.out.println("number는 10보다 작습니다.");
+    //      if (number > 5) {
+    //        System.out.println("number는 5보다 큽니다.");
+    //      }
+    //    } else {
+    //      System.out.println("number는 10입니다.");
+    //    }
+    //
+    //    int a = 5;
+    //    int b = 3;
+    //
+    //    if (a > b) {
+    //      System.out.println("a is greater than b");
+    //    } else if (a == b) {
+    //      System.out.println("a and b are equal");
+    //    } else {
+    //      System.out.println("a is less than b");
+    //    }
+    //
+    //    String res =
+    //        (a > b) ? "a is greater than b" : (a == b) ? "a and b are equal" : "a is less than b";
+    // --------------------------------------------실습 8--------------------------------
+    // --------------------------------------------실습 9--------------------------------
+    int x = 10;
+    if (x > 0) {
+      System.out.println("x는 양수입니다.(if)");
+    } else if (x < 0) {
+      System.out.println("x는 음수입니다.");
+    } else {
+      System.out.println("x는 0입니다.");
+    }
+    // ###########################################################################################
+    String res1 = (x > 0) ? "x는 양수입니다.(삼항)" : ((x < 0) ? "x는 음수입니다." : "x는 0입니다.");
+    System.out.println(res1);
+
+    int score = 75;
+    if (score >= 90) {
+      System.out.println("A");
+    } else if (score >= 80 && score < 90) {
+      System.out.println("B");
+    } else if (score >= 70 && score < 80) {
+      System.out.println("C");
+    } else if (score >= 60 && score < 70) {
+      System.out.println("D");
+    } else {
+      System.out.println("F");
+    }
+
+    // ###########################################################################################
+
+    int year = 2023;
+    if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+      System.out.println("윤년입니다.");
+    } else {
+      System.out.println("윤년이 아닙니다.");
+    }
+
+    // ###########################################################################################
+
+    int a = 10;
+    int b = 20;
+    int c = 30;
+
+    int max = 0;
+    if (a > b) {
+      if (a > c) {
+        max = a;
+      } else {
+        max = c;
+      }
+    } else {
+      if (b > c) {
+        max = b;
+      } else {
+        max = c;
+      }
+    }
+    System.out.println(max);
+
+    // ###########################################################################################
+
+    int passScore = 60;
+    int myScore = 75;
+    if (myScore >= passScore) {
+      System.out.println("합격입니다.(if)");
+    } else {
+      System.out.println("불합격입니다.(if)");
+    }
+    String res2 = (myScore >= passScore) ? "합격입니다.(삼항)" : "불합격입니다.(삼항)";
+
+    // --------------------------------------------실습 9--------------------------------
   }
 }
