@@ -74,12 +74,47 @@ public class Test {
     // --------------------------------------------실습 3--------------------------------
     // --------------------------------------------실습 4--------------------------------
 
-    String str1 = "Hello";
-    String str2 = "Hello";
-    String str3 = new String("Hello");
-
-    System.out.println(str1 == str2); // true
-    System.out.println(str1 == str3); // false
+    //    String str1 = "Hello";
+    //    String str2 = "Hello";
+    //    String str3 = new String("Hello");
+    //
+    //    System.out.println(str1 == str2); // true
+    //    System.out.println(str1 == str3); // false
     // --------------------------------------------실습 4--------------------------------
+    // --------------------------------------------실습 5--------------------------------
+    //    System.out.println(true && true);
+    //    System.out.println(true && false);
+    //    System.out.println(false && true);
+    //    System.out.println(false && false);
+    //
+    //    System.out.println(true || true);
+    //    System.out.println(true || false);
+    //    System.out.println(false || true);
+    //    System.out.println(false || false);
+    //
+    //    System.out.println(true ^ true);
+    //    System.out.println(true ^ false);
+    //    System.out.println(false ^ true);
+    //    System.out.println(false ^ false);
+    // --------------------------------------------실습 5--------------------------------
+    // i는 2의 배수이면서 3의 배수이다.
+    // i % 2 == 0 && i % 3 == 0
+
+    // x는 30의 배수이면서 2의 배수이거나 5의 배수이다.
+    // (x % 30 == 0) && ((x % 2 == 0) || (x % 5 == 0))
+    // --------------------------------------------실습 5--------------------------------
+    // --------------------------------------------실습 6--------------------------------
+    System.out.println(1 & 1);
+    System.out.println(1 & 0);
+    System.out.println(0 & 0);
+
+    System.out.println(1 ^ 1);
+    System.out.println(1 ^ 0);
+    System.out.println(0 ^ 0);
+
+    System.out.println(1 ^ ~1);
+    System.out.println(1 ^ ~0);
+    System.out.println(0 ^ ~0);
+    // --------------------------------------------실습 6--------------------------------
   }
 }
