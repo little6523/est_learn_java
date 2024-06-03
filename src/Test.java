@@ -104,17 +104,33 @@ public class Test {
     // (x % 30 == 0) && ((x % 2 == 0) || (x % 5 == 0))
     // --------------------------------------------실습 5--------------------------------
     // --------------------------------------------실습 6--------------------------------
-    System.out.println(1 & 1);
-    System.out.println(1 & 0);
-    System.out.println(0 & 0);
-
-    System.out.println(1 ^ 1);
-    System.out.println(1 ^ 0);
-    System.out.println(0 ^ 0);
-
-    System.out.println(1 ^ ~1);
-    System.out.println(1 ^ ~0);
-    System.out.println(0 ^ ~0);
+    //    System.out.println(1 & 1);
+    //    System.out.println(1 & 0);
+    //    System.out.println(0 & 0);
+    //
+    //    System.out.println(1 ^ 1);
+    //    System.out.println(1 ^ 0);
+    //    System.out.println(0 ^ 0);
+    //
+    //    System.out.println(1 ^ ~1);
+    //    System.out.println(1 ^ ~0);
+    //    System.out.println(0 ^ ~0);
     // --------------------------------------------실습 6--------------------------------
+    // --------------------------------------------실습 7--------------------------------
+    int score = 95;
+    char grade = (score > 90) ? 'A' : 'B';
+
+    String grade1 = "";
+
+    // score는 95점이고, 5의 배수이면 "good" 아니라면 "bad"
+    grade1 = ((score > 90) && (score % 5 == 0)) ? "good" : "bad";
+    System.out.println(grade1);
+
+    if (score > 90) {
+      grade = 'A';
+    } else {
+      grade = 'B';
+    }
+    // --------------------------------------------실습 7--------------------------------
   }
 }
