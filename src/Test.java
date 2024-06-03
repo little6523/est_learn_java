@@ -249,21 +249,156 @@ public class Test {
     //    System.out.println(result);
     // --------------------------------------------실습 10--------------------------------
     // --------------------------------------------실습 11--------------------------------
-    boolean x = true;
-    boolean y = false;
-    boolean z = true;
-    if (x && !y) {
-      System.out.println("조건 1 충족");
-    }
-    if((y && z) || (!x && !z)){
-      System.out.println("조건 2 충족");
-    }
-    if (x || y || z) {
-      System.out.println("적어도 하나는 참");
-    }
-    if (!x && !y && !z) {
-      System.out.println("모두 거짓");
-    }
+    //    boolean x = true;
+    //    boolean y = false;
+    //    boolean z = true;
+    //    if (x && !y) {
+    //      System.out.println("조건 1 충족");
+    //    }
+    //    if((y && z) || (!x && !z)){
+    //      System.out.println("조건 2 충족");
+    //    }
+    //    if (x || y || z) {
+    //      System.out.println("적어도 하나는 참");
+    //    }
+    //    if (!x && !y && !z) {
+    //      System.out.println("모두 거짓");
+    //    }
     // --------------------------------------------실습 11--------------------------------
+
+    //    int data = 10;
+    //
+    //    switch (data) {
+    //      case 1:
+    //        System.out.println("1입니다.");
+    //        break;
+    //      case 2:
+    //        System.out.println("2입니다.");
+    //        break;
+    //      case 10:
+    //        System.out.println("10입니다.");
+    //        break;
+    //      default:
+    //        System.out.println("dfdf");
+    //    }
+
+    String day = "수요일";
+
+    switch (day) {
+      case "월요일":
+        System.out.println("책 읽기");
+        break;
+      case "화요일":
+        System.out.println("산책 하기");
+        break;
+      case "수요일":
+        System.out.println("코딩 하기");
+        break;
+      case "목요일":
+        System.out.println("노래 듣기");
+        break;
+      case "금요일":
+        System.out.println("운동 하기");
+        break;
+      case "토요일":
+        System.out.println("영화 보기");
+        break;
+      case "일요일":
+        System.out.println("여행 가기");
+        break;
+      default:
+        System.out.println("알 수 없는 요일");
+    }
+
+    char grade = 'A';
+
+    switch (grade) {
+      case 'A':
+        System.out.println("Excellent");
+        break;
+      case 'B':
+        System.out.println("Good");
+        break;
+      case 'C':
+        System.out.println("Average");
+        break;
+      case 'D':
+        System.out.println("Below Average");
+        break;
+      case 'F':
+        System.out.println("Fail");
+        break;
+    }
+
+    char op = '+';
+    int num1 = 10;
+    int num2 = 20;
+
+    switch (op) {
+      case '+':
+        System.out.println(num1 + num2);
+        break;
+      case '-':
+        System.out.println(num1 - num2);
+        break;
+      case '*':
+        System.out.println(num1 * num2);
+        break;
+      case '/':
+        System.out.println(num1 / num2);
+        break;
+    }
+
+    String color = "red";
+
+    switch (color) {
+      case "red":
+        System.out.println("Apple");
+        break;
+      case "green":
+        System.out.println("Grass");
+        break;
+      case "blue":
+        System.out.println("Sky");
+        break;
+    }
+
+    int score = 89;
+
+    switch (score/10) {
+      case 10:
+        System.out.println('A');
+      case 9:
+        System.out.println('A');
+        break;
+      case 8:
+        System.out.println('B');
+        break;
+      case 7:
+        System.out.println('C');
+        break;
+      case 6:
+        System.out.println('D');
+        break;
+      default:
+        System.out.println('F');
+    }
+
+    String language = "Python";
+
+    switch (language) {
+      case "Java":
+        System.out.println("자바에요");
+        break;
+      case "Python":
+        System.out.println("파이썬이에요");
+        break;
+      case "C++":
+        System.out.println("C++이에요");
+        break;
+      case "JavaScript":
+        System.out.println("자바스크립트에요");
+        break;
+    }
   }
 }
