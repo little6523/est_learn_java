@@ -81,5 +81,46 @@ public class Test {
     //    System.out.println("positive: " + positive);
     //    System.out.println("negative: " + negative);
     // --------------------------------------------실습 2--------------------------------
+    // --------------------------------------------실습 3--------------------------------
+    //    int sum = 0;
+    //    for (int i = 1; i <= 100; i++) {
+    //      if (i % 2 == 0){
+    //        sum += i;
+    //      }
+    //    }
+    //    int res = IntStream.rangeClosed(1,100).filter(i -> i % 2 == 0).sum();
+    //    System.out.println(sum);
+    //    System.out.println(res);
+
+    //    int sum = 0;
+    //    int n = 20;
+    //    for (int i = 1; i <= n; i++) {
+    //      if ((i % 3 == 0) && (i % 5 == 0)) {
+    //        sum += i;
+    //      }
+    //    }
+    //    System.out.println(sum);
+    //
+    //    int res = IntStream.rangeClosed(1, n).filter(i -> (i % 3 == 0) && (i % 5 == 0)).sum();
+    //    System.out.println(res);
+
+    //    int[] fibonacci = new int[10];
+    //    fibonacci[0] = 1; fibonacci[1] = 1;
+    //    for (int i = 2; i < 10; i++) {
+    //      fibonacci[i] = fibonacci[i-2] + fibonacci[i-1];
+    //    }
+    //    System.out.println(Arrays.toString(fibonacci));
+    //
+    //    int past1 = 0;
+    //    int past2 = 1;
+    //    int now = 1;
+    //
+    //    for (int i = 0; i < 10; i++) {
+    //      System.out.print(now+" ");
+    //      now = past1 + past2;
+    //      past1 = past2;
+    //      past2 = now;
+    //    }
+    // --------------------------------------------실습 3--------------------------------
   }
 }
