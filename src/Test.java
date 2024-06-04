@@ -238,6 +238,21 @@ public class Test {
     //    for(String str:arr) {
     //      if (str.length() >= 5) System.out.println(str);
     //    }
+
+    // Daily Quiz
+    int count = 1;
+    while (true) {
+      if (count == 10_000) {
+        break;
+      }
+      count++;
+    }
+
+    for(int i = 9; i >= 2; i--) {
+      for (int j = 9; j >= 1; j--) {
+        System.out.printf("%s x %s = %s\n", i, j, i * j);
+      }
+    }
     // --------------------------------------------실습 6--------------------------------
   }
 }
