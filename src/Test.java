@@ -122,5 +122,22 @@ public class Test {
     //      past2 = now;
     //    }
     // --------------------------------------------실습 3--------------------------------
+    // --------------------------------------------실습 4--------------------------------
+    //    for (int i = 0; i > -100; i--) {
+    //      if (i % 2 == 0) {
+    //        System.out.println(i);
+    //      }
+    //    }
+    int[] arr = new int[100];
+    arr[0] = 1;
+    arr[1] = 1;
+    for (int i = 2; i < arr.length; i++) {
+      arr[i] = arr[i - 1] + arr[i - 2];
+    }
+    System.out.println(Arrays.toString(arr));
+
+    Arrays.setAll(arr, i -> (i < 2) ? 1 : arr[i - 1] + arr[i - 2]);
+    System.out.println(Arrays.toString(arr));
+    // --------------------------------------------실습 4--------------------------------
   }
 }
