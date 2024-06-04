@@ -140,6 +140,7 @@ public class Test {
     //    Arrays.setAll(arr, i -> (i < 2) ? 1 : arr[i - 1] + arr[i - 2]);
     //    System.out.println(Arrays.toString(arr));
     // --------------------------------------------실습 4--------------------------------
+    // --------------------------------------------실습 5--------------------------------
     //    for (int i = 1; i <= 9; i++) {
     //      for (int j = 1; j <= 9; j++) {
     //        System.out.printf("%s x %s = %s%n", i, j, i * j);
@@ -172,13 +173,71 @@ public class Test {
 
     // 이중포문을 만든다. i -> 1~100, j -> 2 -> 100
     // i가 50이되면 break, j는 80되면 break;
-    for (int i = 1; i <= 100; i++) {
-      if (i == 50) break;
-      System.out.println("현재 i의 값은 = "+i);
-      for (int j = 2; j <= 100; j++) {
-        if (j == 80) break;
-        System.out.println("현재 j의 값은 = "+j);
-      }
-    }
+    //    for (int i = 1; i <= 100; i++) {
+    //      if (i == 50) break;
+    //      System.out.println("현재 i의 값은 = " + i);
+    //      for (int j = 2; j <= 100; j++) {
+    //        if (j == 80) break;
+    //        System.out.println("현재 j의 값은 = " + j);
+    //      }
+    //    }
+    // --------------------------------------------실습 5--------------------------------
+    // --------------------------------------------실습 6--------------------------------
+    //    int number = 0;
+    //
+    //    while (number < 10) {
+    //      number++;
+    //      if (number == 3) {
+    //        continue;
+    //      } else {
+    //        System.out.println("현재 값은 :" + number);
+    //      }
+    //    }
+
+    //    for (int i = 0; i < 10; i++) {
+    //      if (i == 3) {
+    //        continue;
+    //      } else {
+    //        System.out.println("현재값은 : " + i);
+    //      }
+    //    }
+
+    //    for (int i = 0; i < 10; i++) {
+    //      if (i == 5) {
+    //        break;
+    //      }
+    //      for (int j = 0; j < 10; j++) {
+    //        if (j == 5) {
+    //          continue;
+    //        }
+    //        System.out.println(j);
+    //      }
+    //    }
+
+    //    for(int i = 1; i <= 10; i++){
+    //      if (i == 4 || i == 7) {
+    //        continue;
+    //      }
+    //      System.out.println(i);
+    //    }
+
+    //    int[] arr = {1,2,3,4,5};
+    //    for(int i:arr){
+    //      System.out.println(i);
+    //    }
+
+    //    int[] scores = {1, 30, 20, 80, 15, 20, 30, 22};
+    //    int sum = 0;
+    //    for(int i:scores) {
+    //      sum += i;
+    //    }
+    //    System.out.println("합계는 "+ sum);
+    //    System.out.println("평균은 "+ (double)sum/scores.length);
+
+    //    String[] arr = {"okay2","asbds","good2","ormiiiii","abcde"};
+    //    for(String str:arr) {
+    //      if (str.length() >= 5) System.out.println(str);
+    //    }
+    // --------------------------------------------실습 6--------------------------------
   }
 }
