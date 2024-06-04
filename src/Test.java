@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.List;
+import java.util.function.IntUnaryOperator;
 import java.util.stream.IntStream;
 
 public class Test {
@@ -128,16 +129,56 @@ public class Test {
     //        System.out.println(i);
     //      }
     //    }
-    int[] arr = new int[100];
-    arr[0] = 1;
-    arr[1] = 1;
-    for (int i = 2; i < arr.length; i++) {
-      arr[i] = arr[i - 1] + arr[i - 2];
-    }
-    System.out.println(Arrays.toString(arr));
-
-    Arrays.setAll(arr, i -> (i < 2) ? 1 : arr[i - 1] + arr[i - 2]);
-    System.out.println(Arrays.toString(arr));
+    //    int[] arr = new int[100];
+    //    arr[0] = 1; arr[1] = 1;
+    //
+    //    for (int i = 2; i < arr.length; i++) {
+    //      arr[i] = arr[i - 1] + arr[i - 2];
+    //    }
+    //    System.out.println(Arrays.toString(arr));
+    //
+    //    Arrays.setAll(arr, i -> (i < 2) ? 1 : arr[i - 1] + arr[i - 2]);
+    //    System.out.println(Arrays.toString(arr));
     // --------------------------------------------실습 4--------------------------------
+    //    for (int i = 1; i <= 9; i++) {
+    //      for (int j = 1; j <= 9; j++) {
+    //        System.out.printf("%s x %s = %s%n", i, j, i * j);
+    //      }
+    //    }
+    //
+    //    for (int i = 19; i > 0; i--) {
+    //      System.out.printf("%d x %d = %d\n", 19, i, 19 * i);
+    //    }
+
+    //    int number = 0;
+    //    while (number < 10) {
+    //      System.out.println("현재숫자: " + number);
+    //      if (number == 5) {
+    //        System.out.println("5가 되었습니다.");
+    //        break;
+    //      }
+    //      number++;
+    //    }
+    //
+    //    for(int i = 0; i < 10; i++) {
+    //      System.out.println("현재 i의 값은 = "+i);
+    //      for (int j = 0; j < 10; j++) {
+    //        System.out.println("현재 j의 값은 = "+j);
+    //        if (j == 5) {
+    //          break;
+    //        }
+    //      }
+    //    }
+
+    // 이중포문을 만든다. i -> 1~100, j -> 2 -> 100
+    // i가 50이되면 break, j는 80되면 break;
+    for (int i = 1; i <= 100; i++) {
+      if (i == 50) break;
+      System.out.println("현재 i의 값은 = "+i);
+      for (int j = 2; j <= 100; j++) {
+        if (j == 80) break;
+        System.out.println("현재 j의 값은 = "+j);
+      }
+    }
   }
 }
