@@ -86,27 +86,44 @@ public class Test {
 
     // --------------------------------------------실습 4--------------------------------
     // --------------------------------------------실습 5--------------------------------
-    Random random = new Random();
-
-    int answer = random.nextInt(100)+1;
-    Scanner sc = new Scanner(System.in);
-    int number = 0;
-    while (number != answer) {
-      number = sc.nextInt();
-      sc.nextLine();
-      if (number < answer) {
-        System.out.println("입력하신 숫자 보다 더 높은 숫자입니다.");
-      } else if(number > answer){
-        System.out.println("입력하신 숫자 보다 더 낮은 숫자입니다.");
-      } else {
-        System.out.println("정답입니다!");
-      }
-    }
-
-    sc.close();
+    //    Random random = new Random();
+    //
+    //    int answer = random.nextInt(100)+1;
+    //    Scanner sc = new Scanner(System.in);
+    //    int number = 0;
+    //    while (number != answer) {
+    //      number = sc.nextInt();
+    //      sc.nextLine();
+    //      if (number < answer) {
+    //        System.out.println("입력하신 숫자 보다 더 높은 숫자입니다.");
+    //      } else if(number > answer){
+    //        System.out.println("입력하신 숫자 보다 더 낮은 숫자입니다.");
+    //      } else {
+    //        System.out.println("정답입니다!");
+    //      }
+    //    }
+    //
+    //    sc.close();
     // --------------------------------------------실습 5--------------------------------
     // --------------------------------------------실습 6--------------------------------
+    Scanner sc = new Scanner(System.in);
+    String movieName = sc.nextLine();
+    int personNum = sc.nextInt();
+    String purchasePersonName = sc.nextLine();
+    String purchasePersonPhoneNumber = sc.nextLine();
 
+    System.out.println("===== 영화 티켓 예매 정보 =====");
+    System.out.println("영화 제목: " + movieName);
+
+    System.out.println("관람 인원: " + personNum + "명");
+
+    System.out.println("예매자 이름: " + purchasePersonName);
+
+    System.out.println("예매자 전화번호: " + purchasePersonPhoneNumber);
+
+    System.out.println("총 결제 금액:" + personNum * 10_000 + "원");
+
+    sc.close();
     // --------------------------------------------실습 6--------------------------------
   }
 }
