@@ -1,11 +1,16 @@
-import java.util.*;
+import org.w3c.dom.ranges.Range;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+import java.util.Random;
+
 
 public class Test {
   public static void main(String[] args) {
     // --------------------------------------------실습 1--------------------------------
     //    String[] words = {"apple", "banana", "cherry", "durian"};
     //    for (int i = 0; i < words.length - 1; i++) {
-    //      System.out.println(i);
     //      for (int j = i + 1; j < words.length; j++) {
     //        System.out.println(words[i] + " " + words[j]);
     //      }
@@ -63,7 +68,7 @@ public class Test {
     // --------------------------------------------실습 4--------------------------------
     //    Random random = new Random();
     //
-    //    int i = random.nextInt(6)+1;
+    //    int i = random.nextInt(6) + 1;
     //
     //    System.out.println(i);
 
@@ -71,10 +76,11 @@ public class Test {
     //    ArrayList<Integer> lotto = new ArrayList<>();
     //    while (lotto.size() < 6) {
     //      int num = random.nextInt(45) + 1;
-    //      if (!lotto.contains(num)){
+    //      if (!lotto.contains(num)) {
     //        lotto.add(num);
     //      }
     //    }
+    //
     //    Collections.sort(lotto);
     //    System.out.print("로또 번호: ");
     //    for (int num : lotto) {
@@ -88,7 +94,7 @@ public class Test {
     // --------------------------------------------실습 5--------------------------------
     //    Random random = new Random();
     //
-    //    int answer = random.nextInt(100)+1;
+    //    int answer = random.nextInt(100) + 1;
     //    Scanner sc = new Scanner(System.in);
     //    int number = 0;
     //    while (number != answer) {
@@ -96,7 +102,7 @@ public class Test {
     //      sc.nextLine();
     //      if (number < answer) {
     //        System.out.println("입력하신 숫자 보다 더 높은 숫자입니다.");
-    //      } else if(number > answer){
+    //      } else if (number > answer) {
     //        System.out.println("입력하신 숫자 보다 더 낮은 숫자입니다.");
     //      } else {
     //        System.out.println("정답입니다!");
@@ -109,6 +115,7 @@ public class Test {
     Scanner sc = new Scanner(System.in);
     String movieName = sc.nextLine();
     int personNum = sc.nextInt();
+    sc.nextLine();
     String purchasePersonName = sc.nextLine();
     String purchasePersonPhoneNumber = sc.nextLine();
 
@@ -121,7 +128,7 @@ public class Test {
 
     System.out.println("예매자 전화번호: " + purchasePersonPhoneNumber);
 
-    System.out.println("총 결제 금액:" + personNum * 10_000 + "원");
+    System.out.println("총 결제 금액: " + personNum * 10_000 + "원");
 
     sc.close();
     // --------------------------------------------실습 6--------------------------------
