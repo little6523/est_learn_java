@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Stream;
 
 public class Test {
   public static void main(String[] args) {
@@ -68,26 +67,43 @@ public class Test {
     //
     //    System.out.println(i);
 
-    Random random = new Random();
-    ArrayList<Integer> lotto = new ArrayList<>();
-    while (lotto.size() < 6) {
-      int num = random.nextInt(45) + 1;
-      if (!lotto.contains(num)){
-        lotto.add(num);
-      }
-    }
-    Collections.sort(lotto);
-    System.out.print("로또 번호: ");
-    for (int num : lotto) {
-      System.out.print(num + " ");
-    }
+    //    Random random = new Random();
+    //    ArrayList<Integer> lotto = new ArrayList<>();
+    //    while (lotto.size() < 6) {
+    //      int num = random.nextInt(45) + 1;
+    //      if (!lotto.contains(num)){
+    //        lotto.add(num);
+    //      }
+    //    }
+    //    Collections.sort(lotto);
+    //    System.out.print("로또 번호: ");
+    //    for (int num : lotto) {
+    //      System.out.print(num + " ");
+    //    }
 
     // int -> Integer : boxing
     // Integer -> int : unboxing
 
     // --------------------------------------------실습 4--------------------------------
     // --------------------------------------------실습 5--------------------------------
+    Random random = new Random();
 
+    int answer = random.nextInt(100)+1;
+    Scanner sc = new Scanner(System.in);
+    int number = 0;
+    while (number != answer) {
+      number = sc.nextInt();
+      sc.nextLine();
+      if (number < answer) {
+        System.out.println("입력하신 숫자 보다 더 높은 숫자입니다.");
+      } else if(number > answer){
+        System.out.println("입력하신 숫자 보다 더 낮은 숫자입니다.");
+      } else {
+        System.out.println("정답입니다!");
+      }
+    }
+
+    sc.close();
     // --------------------------------------------실습 5--------------------------------
     // --------------------------------------------실습 6--------------------------------
 
