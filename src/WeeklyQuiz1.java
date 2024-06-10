@@ -16,10 +16,10 @@ public class WeeklyQuiz1 {
           if (selectFunction >= 0 && selectFunction <= 4) {
             break;
           } else {
-            System.out.println("올바르지 않은 입력입니다.");
+            System.out.println("올바른 입력이 아닙니다.");
           }
         } catch (InputMismatchException e) {
-          System.out.println("올바르지 않은 입력입니다.");
+          System.out.println("올바른 입력이 아닙니다.");
           sc.nextLine();
         }
       }
@@ -35,7 +35,7 @@ public class WeeklyQuiz1 {
           firstNumber = sc.nextInt();
           break;
         } catch (InputMismatchException e) {
-          System.out.println("올바르지 않은 입력입니다.");
+          System.out.println("올바른 입력이 아닙니다.");
           sc.nextLine();
         }
       }
@@ -46,7 +46,7 @@ public class WeeklyQuiz1 {
           secondNumber = sc.nextInt();
           break;
         } catch (InputMismatchException e) {
-          System.out.println("올바르지 않은 입력입니다.");
+          System.out.println("올바른 입력이 아닙니다.");
           sc.nextLine();
         }
       }
