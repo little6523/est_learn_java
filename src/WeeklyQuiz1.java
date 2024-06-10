@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class WeekelyQuiz1 {
+public class WeeklyQuiz1 {
   public void learn() {
     Scanner sc = new Scanner(System.in);
     int selectFunction = 0;
