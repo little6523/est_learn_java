@@ -54,19 +54,19 @@ public class WeeklyQuiz1 {
       switch (selectFunction) {
         case 1:
           System.out.printf(
-                  "%d + %d = %d\n", firstNumber, secondNumber, firstNumber + secondNumber);
+              "%d + %d = %d\n", firstNumber, secondNumber, firstNumber + secondNumber);
           break;
         case 2:
           System.out.printf(
-                  "%d - %d = %d\n", firstNumber, secondNumber, firstNumber - secondNumber);
+              "%d - %d = %d\n", firstNumber, secondNumber, firstNumber - secondNumber);
           break;
         case 3:
           System.out.printf(
-                  "%d * %d = %d\n", firstNumber, secondNumber, firstNumber * secondNumber);
+              "%d * %d = %d\n", firstNumber, secondNumber, firstNumber * secondNumber);
           break;
         case 4:
           System.out.printf(
-                  "%d / %d = %.2f\n", firstNumber, secondNumber, (double)firstNumber / secondNumber);
+              "%d / %d = %.2f\n", firstNumber, secondNumber, (double) firstNumber / secondNumber);
       }
     }
   }
