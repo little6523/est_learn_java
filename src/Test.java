@@ -33,13 +33,22 @@ public class Test {
     Person person2 = new Person("김철수", 0101520100, 23113, 10);
     Person person3 = new Person("후하하", 0101522300, 999999, 30);
     Person person4 = new Person("아저씨", 0101646341, 256532, 50);
-
-    person1.sayHello();
-    person2.sayHello();
-
-    person1.sayMoney();
-    person2.sayMoney();
+    //
+    //    person1.sayHello();
+    //    person2.sayHello();
+    //
+    //    person1.sayMoney();
+    //    person2.sayMoney();
     // -------------------------- 4교시 ------------------------------
+    // -------------------------- 5교시 ------------------------------
+    Student student = new Student();
+
+    person1.teaching(student);
+    person1.teaching(student);
+
+    person1.cheating(student);
+    person1.cheating(student);
+    // -------------------------- 5교시 ------------------------------
 
   }
 
@@ -79,4 +88,6 @@ public class Test {
   // -------------------------- 4교시 ------------------------------
   // Person 클래스 및 생성자 정의
   // -------------------------- 4교시 ------------------------------
+  // -------------------------- 5교시 ------------------------------
+  // -------------------------- 5교시 ------------------------------
 }

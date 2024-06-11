@@ -20,4 +20,12 @@ public class Person {
   public void sayMoney() {
       System.out.println("내가 가지고 있는 돈은 " + money * 10000 + "원이야");
   }
+
+  public void teaching(Student student) {
+    student.levelUp();
+  }
+
+  public void cheating(Student student) {
+    student.levelDown();
+  }
 }
