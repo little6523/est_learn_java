@@ -1,6 +1,6 @@
 public class Test2 {
 
-  public static void call(){
+  public static void call() {
     System.out.println("call");
   }
 
@@ -12,7 +12,11 @@ public class Test2 {
     return "okay";
   }
 
-  private void add() {
-    System.out.println("add");
+  public int add(int a, int b) {
+    return a + b;
+  }
+
+  public int sub(int a, int b) {
+    return a - b;
   }
 }
