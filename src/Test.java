@@ -41,14 +41,32 @@ public class Test {
     //    person2.sayMoney();
     // -------------------------- 4교시 ------------------------------
     // -------------------------- 5교시 ------------------------------
-    Student student = new Student();
-
-    person1.teaching(student);
-    person1.teaching(student);
-
-    person1.cheating(student);
-    person1.cheating(student);
+    //    Student student = new Student();
+    //
+    //    person1.teaching(student);
+    //    person1.teaching(student);
+    //
+    //    person1.cheating(student);
+    //    person1.cheating(student);
     // -------------------------- 5교시 ------------------------------
+    // -------------------------- 6교시 ------------------------------
+
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("계좌번호를 입력하세요: ");
+    String accountNumber = scanner.nextLine();
+    System.out.println("소유자 이름을 입력하세요: ");
+    String ownerName = scanner.nextLine();
+    BankAccount account = new BankAccount(accountNumber, ownerName);
+
+    account.deposit(100000);
+    account.withdraw(50000);
+
+    account.printBalance();
+
+    scanner.close();
+
+    // -------------------------- 6교시 ------------------------------
 
   }
 
