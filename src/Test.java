@@ -38,10 +38,15 @@ public class Test {
 
     //    new HouseKim();
 
-//    Sonata sonata = new Sonata();
-//    System.out.println(sonata.company); // 에러
+    //    Sonata sonata = new Sonata();
+    //    System.out.println(sonata.company); // 에러
 
     // ------------------------- 4교시 -------------------------
+    // ------------------------- 5교시 -------------------------
+    Car car = new Car();
+    car.setSpeed(-100);
+    car.checkSpeed();
+    // ------------------------- 5교시 -------------------------
 
   }
 }
