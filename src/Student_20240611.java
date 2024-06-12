@@ -1,7 +1,7 @@
-public class Student {
+public class Student_20240611 {
   int level;
 
-  public Student() {
+  public Student_20240611() {
     this.level = 1;
   }
 

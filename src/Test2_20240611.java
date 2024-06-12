@@ -1,4 +1,4 @@
-public class Test2 {
+public class Test2_20240611 {
 
   public static void call() {
     System.out.println("call");

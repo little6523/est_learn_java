@@ -1,10 +1,10 @@
-public class BankAccount {
+public class BankAccount_20240611 {
 
   private String accountNumber;
   private String ownerName;
   private double balance;
 
-  public BankAccount(String accountNumber, String ownerName) {
+  public BankAccount_20240611(String accountNumber, String ownerName) {
     this.accountNumber = accountNumber;
     this.ownerName = ownerName;
     this.balance = 0.0;
