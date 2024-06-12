@@ -2,8 +2,9 @@ public class Person {
 
   String name;
   int age;
+  static final String gender = "남";
 
-  public Person(String name, int age) {
+  public Person(String name, int age, String gender) {
     this.name = name;
     this.age = age;
   }
