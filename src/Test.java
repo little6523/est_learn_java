@@ -42,15 +42,20 @@ public class Test {
 
     //    Computer computer = new Computer();
     //    computer.say();
-    int r = 10;
-    Calculator calculator = new Calculator();
-    System.out.println("원면적" + calculator.areaCircle(r));
-    System.out.println();
-
-    Computer computer = new Computer();
-    System.out.println("원면적" + computer.areaCircle(r));
+    //    int r = 10;
+    //    Calculator calculator = new Calculator();
+    //    System.out.println("원면적" + calculator.areaCircle(r));
+    //    System.out.println();
+    //
+    //    Computer computer = new Computer();
+    //    System.out.println("원면적" + computer.areaCircle(r));
     // ------------------------- 4교시 -------------------------
     // ------------------------- 5교시 -------------------------
+    SmartPhone smartPhone = new SmartPhone("김승조");
+
+    smartPhone.turnOn();
+    smartPhone.turnOff();
+    smartPhone.internetSearch();
 
     // ------------------------- 5교시 -------------------------
     // ------------------------- 6교시 -------------------------
