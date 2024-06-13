@@ -19,12 +19,19 @@ public class Test {
     //    child.invest();
     // ------------------------- 1교시 -------------------------
     // ------------------------- 2교시 -------------------------
-    Dog dog = new Dog();
-
-    dog.setName("용팔이");
-
-    dog.sleep();
-    dog.sleep(100);
+    //    Dog dog = new Dog();
+    //
+    //    dog.setName("용팔이");
+    //
+    //    dog.sleep();
+    //    dog.sleep(100);
     // ------------------------- 2교시 -------------------------
+    // ------------------------- 3교시 -------------------------
+    Student student = new Student("승조", "a", 1);
+
+    System.out.println(student.name);
+    System.out.println(student.ssn);
+    System.out.println(student.studentNo);
+    // ------------------------- 3교시 -------------------------
   }
 }
