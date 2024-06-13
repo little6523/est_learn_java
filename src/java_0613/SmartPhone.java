@@ -1,3 +1,5 @@
+package java_0613;
+
 public class SmartPhone extends Phone{
 
     public SmartPhone(String owner) {

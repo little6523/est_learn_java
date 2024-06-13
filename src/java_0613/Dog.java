@@ -1,3 +1,5 @@
+package java_0613;
+
 public class Dog extends Animal {
 
   int age;

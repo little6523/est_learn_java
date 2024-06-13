@@ -1,3 +1,5 @@
+package java_0613;
+
 public class Animal {
   String name;
   String gender;

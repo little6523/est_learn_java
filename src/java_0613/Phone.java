@@ -1,4 +1,6 @@
-public abstract class Phone {
+package java_0613;
+
+public class Phone {
   private String owner;
 
   public Phone(String owner) {

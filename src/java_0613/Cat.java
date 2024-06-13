@@ -1,4 +1,6 @@
-public class Cat extends Animal2 {
+package java_0613;
+
+public class Cat extends Animal1 {
 
   public Cat() {
     this.kind = "포유류";

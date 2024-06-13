@@ -1,4 +1,6 @@
-public abstract class Animal2 {
+package java_0613;
+
+public abstract class Animal1 {
 
   protected String kind;
 

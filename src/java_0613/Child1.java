@@ -1,3 +1,5 @@
+package java_0613;
+
 public class Child1 extends Parent1 {
 
   void method2() {
