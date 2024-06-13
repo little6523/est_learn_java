@@ -1,3 +1,5 @@
+package java_0530;
+
 public class Java_20240530 implements TestInterface_20240530 {
     private void learn() {
         //        int a = 20;

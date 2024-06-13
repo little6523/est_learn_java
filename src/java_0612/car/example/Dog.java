@@ -1,8 +1,8 @@
-package car.example;
+package java_0612.car.example;
 
-import car.Animal;
+import java_0612.car.Animal_20240612;
 
-public class Dog extends Animal {
+public class Dog extends Animal_20240612 {
 //  public static void main(String[] args) {
 //    Dog dog = new Dog();
 //    System.out.println(dog.name);

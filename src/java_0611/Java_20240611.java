@@ -1,3 +1,5 @@
+package java_0611;
+
 import java.util.Scanner;
 
 public class Java_20240611 {
@@ -11,10 +13,10 @@ public class Java_20240611 {
     //    System.out.println(div(10, 3));
     // -------------------------- 1교시 ------------------------------
     // -------------------------- 2교시 ------------------------------
-    //    Test2_20240611 test2 = new Test2_20240611();
+    //    java_0611.Test2_20240611 test2 = new java_0611.Test2_20240611();
     //    System.out.println(test2.b);
     //    System.out.println(test2.good());
-    //    Test2_20240611.call();
+    //    java_0611.Test2_20240611.call();
     // -------------------------- 2교시 ------------------------------
     // -------------------------- 3교시 ------------------------------
     //    test2
@@ -23,15 +25,15 @@ public class Java_20240611 {
     //    test 클래스에서는
     //
     //    해당 기능을 호출 해서 메서드에 아규먼트로 임의의 값을 넣어서 메서드를 실행한다
-    //    Test2_20240611 test2 = new Test2_20240611();
+    //    java_0611.Test2_20240611 test2 = new java_0611.Test2_20240611();
     //    System.out.println(test2.add(1, 2));
     //    System.out.println(test2.sub(10, 5));
     // -------------------------- 3교시 ------------------------------
     // -------------------------- 4교시 ------------------------------
-    //    Person_20240611 person1 = new Person_20240611("이현준", 0101000100, 5000, 26);
-    //    Person_20240611 person2 = new Person_20240611("김철수", 0101520100, 23113, 10);
-    //    Person_20240611 person3 = new Person_20240611("후하하", 0101522300, 999999, 30);
-    //    Person_20240611 person4 = new Person_20240611("아저씨", 0101646341, 256532, 50);
+    //    java_0611.Person_20240611 person1 = new java_0611.Person_20240611("이현준", 0101000100, 5000, 26);
+    //    java_0611.Person_20240611 person2 = new java_0611.Person_20240611("김철수", 0101520100, 23113, 10);
+    //    java_0611.Person_20240611 person3 = new java_0611.Person_20240611("후하하", 0101522300, 999999, 30);
+    //    java_0611.Person_20240611 person4 = new java_0611.Person_20240611("아저씨", 0101646341, 256532, 50);
     //
     //    person1.sayHello();
     //    person2.sayHello();
@@ -40,7 +42,7 @@ public class Java_20240611 {
     //    person2.sayMoney();
     // -------------------------- 4교시 ------------------------------
     // -------------------------- 5교시 ------------------------------
-    //    Student_20240611 student = new Student_20240611();
+    //    java_0611.Student_20240611 student = new java_0611.Student_20240611();
     //
     //    person1.teaching(student);
     //    person1.teaching(student);

@@ -1,18 +1,19 @@
-package p1;
+package java_0612.p1;
 
-public class Person {
+public class Person_20240612 {
 
   private String name2;
   String name;
   int age;
   final String test;
   int gold = 999999999;
+  public static final String gender = "남";
   static final double PI = 3.14159;
 
-  public Person(String name, int age) {
+  public Person_20240612(String name, int age, String test) {
     this.name = name;
     this.age = age;
-    this.test = "123";
+    this.test = test;
   }
 
   private String checkAmount(int amount) {

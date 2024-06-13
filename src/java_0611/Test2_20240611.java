@@ -1,3 +1,5 @@
+package java_0611;
+
 public class Test2_20240611 {
 
   public static void call() {

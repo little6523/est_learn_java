@@ -1,3 +1,5 @@
+package java_0611;
+
 public class Car_20240611 {
 
   private String name;

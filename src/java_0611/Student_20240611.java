@@ -1,3 +1,5 @@
+package java_0611;
+
 public class Student_20240611 {
   int level;
 

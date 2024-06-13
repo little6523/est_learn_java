@@ -1,3 +1,5 @@
+package java_0611;
+
 public class Person_20240611 {
 
   String name;

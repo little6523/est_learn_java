@@ -1,3 +1,5 @@
+package java_0611;
+
 public class DailyQuiz_20240611 {
     public void learn() {
         Me_20240611 me = new Me_20240611("이현준", 26, 100_000_000,
