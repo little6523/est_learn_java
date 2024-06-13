@@ -27,11 +27,34 @@ public class Test {
     //    dog.sleep(100);
     // ------------------------- 2교시 -------------------------
     // ------------------------- 3교시 -------------------------
-    Student student = new Student("승조", "a", 1);
-
-    System.out.println(student.name);
-    System.out.println(student.ssn);
-    System.out.println(student.studentNo);
+    //    Student student = new Student("승조", "a", 1);
+    //
+    //    System.out.println(student.name);
+    //    System.out.println(student.ssn);
+    //    System.out.println(student.studentNo);
     // ------------------------- 3교시 -------------------------
+    // ------------------------- 4교시 -------------------------
+    //    Child1 child = new Child1();
+    //
+    //    child.method1();
+    //    child.method2();
+    //    child.method3();
+
+    //    Computer computer = new Computer();
+    //    computer.say();
+    int r = 10;
+    Calculator calculator = new Calculator();
+    System.out.println("원면적" + calculator.areaCircle(r));
+    System.out.println();
+
+    Computer computer = new Computer();
+    System.out.println("원면적" + computer.areaCircle(r));
+    // ------------------------- 4교시 -------------------------
+    // ------------------------- 5교시 -------------------------
+
+    // ------------------------- 5교시 -------------------------
+    // ------------------------- 6교시 -------------------------
+
+    // ------------------------- 6교시 -------------------------
   }
 }

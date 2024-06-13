@@ -6,4 +6,8 @@ public class Student extends Person {
         this.studentNo = studentNo;
 
   }
+
+  public void say(String name) {
+    System.out.println("my name is " + name);
+  }
 }
