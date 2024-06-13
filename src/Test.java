@@ -51,14 +51,19 @@ public class Test {
     //    System.out.println("원면적" + computer.areaCircle(r));
     // ------------------------- 4교시 -------------------------
     // ------------------------- 5교시 -------------------------
-    SmartPhone smartPhone = new SmartPhone("김승조");
-
-    smartPhone.turnOn();
-    smartPhone.turnOff();
-    smartPhone.internetSearch();
+    //    SmartPhone smartPhone = new SmartPhone("김승조");
+    //
+    //    smartPhone.turnOn();
+    //    smartPhone.turnOff();
+    //    smartPhone.internetSearch();
 
     // ------------------------- 5교시 -------------------------
     // ------------------------- 6교시 -------------------------
+    Dog1 dog1 = new Dog1();
+    Cat cat = new Cat();
+
+    dog1.sound();
+    cat.sound();
 
     // ------------------------- 6교시 -------------------------
   }
