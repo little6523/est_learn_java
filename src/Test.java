@@ -1,56 +1,19 @@
-import car.Animal;
-import car.example.Dog;
-import car.example.Sonata;
-import house.HouseKim;
-import p1.Person;
-
 public class Test {
   public static void main(String[] args) {
     // ------------------------- 1교시 -------------------------
-    //    p1.Person person1 = new p1.Person("승조", 25, "1");
-    //    p1.Person person2 = new p1.Person("max", 21, "2");
+    //    InheritB inheritB = new InheritB();
     //
-    //    person1.sayHello();
-    //    person1.introduce();
+    //    inheritB.field2 = "필드2";
+    //    inheritB.method2();
     //
-    //    person2.sayHello();
-    //    person2.introduce();
+    //    inheritB.field1 = 100;
+    //    inheritB.method1();
 
-    // ------------------------- 1교시 -------------------------
-    // ------------------------- 2교시 -------------------------
-    //    p1.Person.gender = "adf"; // 변경불가
-    // ------------------------- 2교시 -------------------------
-    // ------------------------- 3교시 -------------------------
-    //    Person person = new Person("D", 25);
-    //    Person person1 = new Person("D", 25);
-    //    Person person2 = new Person("D", 25);
-    //    Person person3 = new Person("D", 25);
-    //    Person person4 = new Person("D", 25);
-    //    Person person5 = new Person("D", 25);
-    //    Person person6 = new Person("D", 25);
-    //    Person person7 = new Person("D", 25);
-    //    Person person8 = new Person("D", 25);
-    //    // 생성자를 통해 값을 주입할 수 있는 것은 상수가 아니다.
-    //
-    //    Person okay = new Person("okay", 25);
-    // ------------------------- 3교시 -------------------------
-    // ------------------------- 4교시 -------------------------
-
-    //    new HouseKim();
-
-    //    Sonata sonata = new Sonata();
-    //    System.out.println(sonata.company); // 에러
-
-    // ------------------------- 4교시 -------------------------
-    // ------------------------- 5교시 -------------------------
-    //    Car car = new Car();
-    //    car.setSpeed(-100);
-    //    car.checkSpeed();
-    // ------------------------- 5교시 -------------------------
-    // ------------------------- 6교시 -------------------------
-    Car car = new Car();
-    System.out.println(car.getSpeed());
-    // ------------------------- 6교시 -------------------------
-
+    // 부모 (parent) 클래스를 구현하고 money 멤버변수 를 가지고 있고 저축한다 라는 메서드를 가지고있는데 해당 메서드는  money 를 10000원씩 추가하는
+    // 로직을 갖고있다
+    // 자식(child) 클래스를 구현하고 부모 클래스를 상속 받아 투자한다라는 메서드를 가지고 있는데 해당 메서드는 money를 1000원을 뺴는 로직을 갖고있다.
+    Child child = new Child();
+    child.saveMoney();
+    child.invest();
   }
 }
