@@ -27,18 +27,26 @@ public class Test {
     //    }
     //    System.out.println("정상적으로 종료되었습니다.");
 
-    Scanner scanner = new Scanner(System.in);
-    try {
-      int i = scanner.nextInt();
-      int result = i / 0;
-      System.out.println(result);
-    } catch (NullPointerException e) {
-      System.out.println("0으로 나눌 수 없습니다.");
-    } finally{
-      System.out.println("스캐너를 종료합니다.");
-      scanner.close();
-    }
+    //    Scanner scanner = new Scanner(System.in);
+    //    try {
+    //      int i = scanner.nextInt();
+    //      int result = i / 0;
+    //      System.out.println(result);
+    //    } catch (NullPointerException e) {
+    //      System.out.println("0으로 나눌 수 없습니다.");
+    //    } finally{
+    //      System.out.println("스캐너를 종료합니다.");
+    //      scanner.close();
+    //    }
     // ------------------------- 3교시 -------------------------
+    // ------------------------- 4교시 -------------------------
+    try {
+      int[] numbers = {1, 2, 3};
+      System.out.println(numbers[5]);
+    } catch (ArrayIndexOutOfBoundsException e) {
+      System.out.println("배열의 인덱스를 벗어났습니다.");
+    }
+    // ------------------------- 4교시 -------------------------
 
   }
 
