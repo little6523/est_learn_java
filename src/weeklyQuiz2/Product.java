@@ -2,44 +2,30 @@ package weeklyQuiz2;
 
 public class Product {
 
-    String productName;   // 상품명
-    double productPrice;     // 가격
-    int productQuantity;  // 재고량
+  private final String name; // 제품명
+  private final int price; // 가격
+  private int stock; // 재고량
 
-    public Product(String productName, double productPrice, int productQuantity) {
-        this.productName = productName;
-        this.productPrice = productPrice;
-        this.productQuantity = productQuantity;
-    }
+  public Product(String name, int price, int stock) {
+    this.name = name;
+    this.price = price;
+    this.stock = stock;
+  }
 
-    // 가격 계산 메소드
-    double calculatePrice() {
-        return this.productPrice;
-    }
+  // 가격 계산 메소드
+  public double calculatePrice() {
+    return price;
+  }
 
-    public int getProductQuantity() {
-        return productQuantity;
-    }
+  public int getStock() {
+    return stock;
+  }
 
-    public void setProductQuantity(int productQuantity) {
-        this.productQuantity = productQuantity;
-    }
+  public int getPrice() {
+    return price;
+  }
 
-    public double getProductPrice() {
-        return productPrice;
-    }
-
-    public void setProductPrice(int productPrice) {
-        this.productPrice = productPrice;
-    }
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-
+  public String getName() {
+    return name;
+  }
 }

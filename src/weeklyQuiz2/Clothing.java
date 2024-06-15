@@ -1,27 +1,45 @@
 package weeklyQuiz2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+public class Clothing extends Product {
 
-public class Clothing extends Product{
+  // 사이즈 종류
+  private static final String[] sizes = {"XS", "S", "M", "L", "XL", "XXL"};
 
-    // 사이즈 종류
-    final List<String> sizes =
-            new ArrayList<>(Arrays.asList("XS", "S", "M", "L", "XL", "XXL"));
-    final double priceLargerThanSizeOfL = 1.1;
+  // L이상의 사이즈
+  private final double priceOfSizeLOrMore = 1.1;
 
-    String size; // 사이즈
+  private String size; // 사이즈
 
-    public Clothing(String productName, int productPrice, int productQuantity, String size) {
-        super(productName, productPrice, productQuantity);
-        this.size = size;
+  public static String[] getSizes() {
+    return sizes;
+  }
+
+  public Clothing(String name, int price, int stock, String size) {
+    super(name, price, stock);
+    this.size = size;
+  }
+
+  private int findSizeAtSizes(String size) {
+    for (int i = 0; i < sizes.length; i++) {
+      if (sizes[i].equals(size)) {
+        return i;
+      }
     }
+    return -1;
+  }
 
-    double calculatePrice() {
-        if (this.sizes.indexOf(this.size) >= this.sizes.indexOf("L")) {
-            return this.productPrice * this.priceLargerThanSizeOfL;
-        }
-        return this.productPrice;
+  private boolean checkLargerThanSizeL(String size) {
+    int inputSize = findSizeAtSizes(size);
+    int sizeL = findSizeAtSizes("L");
+    return inputSize > sizeL;
+  }
+
+  @Override
+  public double calculatePrice() {
+    int price = getPrice();
+    if (checkLargerThanSizeL(size)) {
+      return price * this.priceOfSizeLOrMore;
     }
+    return price;
+  }
 }

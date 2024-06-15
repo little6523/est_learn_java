@@ -3,19 +3,25 @@ package weeklyQuiz2;
 public class Electronics extends Product {
 
     // Apple의 경우 가격의 1.2배 (20%추가)
-    final double surchargeApplePrice = 1.2;
+    private final double priceOfApple = 1.2;
 
-    String brand; // 브랜드
+    private String brand; // 브랜드
 
-    public Electronics(String productName, int productPrice, int productQuantity, String brand) {
-        super(productName, productPrice, productQuantity);
+    public Electronics(String name, int price, int stock, String brand) {
+        super(name, price, stock);
         this.brand = brand;
     }
 
-    double calculatePrice() {
-        if (this.brand.equals("Apple")) {
-            return this.productPrice * surchargeApplePrice;
+    private boolean checkBrand(String brand) {
+        return this.brand.equals("Apple");
+    }
+
+    @Override
+    public double calculatePrice() {
+        int price = getPrice();
+        if (checkBrand(brand)) {
+            return price * priceOfApple;
         }
-        return this.productPrice;
+        return price;
     }
 }

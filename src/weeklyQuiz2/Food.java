@@ -5,25 +5,28 @@ import java.time.Period;
 
 public class Food extends Product {
 
-    final double discountOfDay = 7;
+    private final double discountOfDays = 7;
 
     // 유통기한이 7일 이하로 남은 경우 가격의 1.2배 (20%추가)
-    final double priceLessThanSevenDays = 0.8;
+    private final double priceOfSevenDaysOrLess = 0.8;
 
-    LocalDate expirationDate;
-    LocalDate today = LocalDate.now();
+    private final LocalDate expirationDate;
 
-    public Food(String productName, int productPrice, int productQuantity, LocalDate expirationDate) {
-        super(productName, productPrice, productQuantity);
+    public Food(String name, int price, int stock, LocalDate expirationDate) {
+        super(name, price, stock);
         this.expirationDate = expirationDate;
     }
 
-    double calculatePrice() {
+    @Override
+    public double calculatePrice() {
+        int price = getPrice();
+
         // 두 날짜 사이의 기간을 계산
-        Period remainedTime = Period.between(this.today, this.expirationDate);
-        if (remainedTime.getDays() <= discountOfDay) {
-            return productPrice * priceLessThanSevenDays;
+        LocalDate today = LocalDate.now();
+        Period remainedTime = Period.between(today, expirationDate);
+        if (remainedTime.getDays() <= discountOfDays) {
+            return price * priceOfSevenDaysOrLess;
         }
-        return productPrice;
+        return price;
     }
 }
