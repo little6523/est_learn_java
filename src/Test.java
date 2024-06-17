@@ -24,11 +24,18 @@ public class Test {
     // KiaCar 라는 구현체클래스를 만든다
     // 이 구현체는 Car 라는 인터페이스를 구현한다.
     // Car 인터페이스는 Tier, Engine, Navi 라는 각 인터페이스를 상속받는다.
-    KiaCar kiaCar = new KiaCar();
-    System.out.println(kiaCar.getTire());
-    System.out.println(kiaCar.showEngine());
-    System.out.println(kiaCar.amountNavi());
+    //    KiaCar kiaCar = new KiaCar();
+    //    System.out.println(kiaCar.getTire());
+    //    System.out.println(kiaCar.showEngine());
+    //    System.out.println(kiaCar.amountNavi());
     // --------------------- 2교시 ---------------------
+    // --------------------- 3교시 ---------------------
+    //    InterfaceC impleC = new ImpleC();
+    //    impleC.showA();
+
+    ProfileService profileService = new ProfileService();
+    profileService.saveProfile(new ProfileMemoryRepository());
+    // --------------------- 3교시 ---------------------
 
   }
 }

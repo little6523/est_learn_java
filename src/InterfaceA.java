@@ -1,3 +1,7 @@
 public interface InterfaceA {
-    void methodA();
+  void methodA();
+
+  default void showA() {
+    System.out.println("okay");
+  }
 }
