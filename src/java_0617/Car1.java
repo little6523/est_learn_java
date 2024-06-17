@@ -1,4 +1,6 @@
-public class Car<T> {
+package java_0617;
+
+public class Car1<T> {
     private T t;
 
     public T get() {
