@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
 public class Test {
   public static void main(String[] args) {
     // --------------------- 1교시 ---------------------
@@ -33,9 +37,18 @@ public class Test {
     //    InterfaceC impleC = new ImpleC();
     //    impleC.showA();
 
-    ProfileService profileService = new ProfileService();
-    profileService.saveProfile(new ProfileMemoryRepository());
+    //    ProfileService profileService = new ProfileService();
+    //    profileService.saveProfile(new ProfileMemoryRepository());
     // --------------------- 3교시 ---------------------
+    // --------------------- 4교시 ---------------------
+
+    //    ArrayList<Animal> stringArrayList = new ArrayList<>();
+    //    stringArrayList.add(new Lion());
+    //
+    //    List list = new ArrayList<>();
+    //    String o = (String) list.get(0);
+
+    // --------------------- 4교시 ---------------------
 
   }
 }
