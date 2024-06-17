@@ -49,6 +49,23 @@ public class Test {
     //    String o = (String) list.get(0);
 
     // --------------------- 4교시 ---------------------
+    // --------------------- 5교시 ---------------------
+    Box box = new Box();
+    box.set("hello");
+
+    Object o = box.get();
+
+    Box<String> stringBox = new Box<>();
+    Box<Integer> integerBox = new Box<>();
+    integerBox.set(6);
+    int i = integerBox.get();
+    System.out.println(integerBox.isIns());
+
+    Car<String> car = new Car<>();
+    car.set("람보르기니");
+    System.out.println(car.get());
+
+    // --------------------- 5교시 ---------------------
 
   }
 }
