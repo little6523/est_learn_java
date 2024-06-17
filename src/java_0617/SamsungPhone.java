@@ -1,3 +1,5 @@
+package java_0617;
+
 public class SamsungPhone implements Phone, Good{
     @Override
     public String call() {

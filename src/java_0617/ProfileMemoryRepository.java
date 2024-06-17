@@ -1,3 +1,5 @@
+package java_0617;
+
 public class ProfileMemoryRepository implements ProfileRepository {
 
   @Override
