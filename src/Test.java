@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class Test {
   public static void main(String[] args) {
@@ -14,42 +11,53 @@ public class Test {
     //    compareString("hello", "hello1");
     // ----------------- 2교시 ---------------------------
     // ----------------- 3교시 ---------------------------
-    Course<Person> personCourse = new Course<>("일반인", 5);
-    personCourse.add(new Person("일반인"));
-    personCourse.add(new Worker("직장인"));
-    personCourse.add(new Student("학생"));
-    personCourse.add(new HighStudent("고등학생"));
-
-    Course<Worker> workerCourse = new Course<>("직장인과정", 5);
-    workerCourse.add(new Worker("직장인"));
-
-    Course<Student> studentCourse = new Course<>("학생과정", 5);
-    studentCourse.add(new Student("학생"));
-    studentCourse.add(new HighStudent("고등학생"));
-
-    Course<HighStudent> highStudentCourse = new Course<>("고등학생과정", 5);
-    highStudentCourse.add(new HighStudent("고등학생"));
-
-    registerCourse(personCourse);
-    registerCourse(workerCourse);
-    registerCourse(studentCourse);
-    registerCourse(highStudentCourse);
-
-    System.out.println("===================");
-    System.out.println("===================");
-    System.out.println("===================");
-
-    registerCourseStudent(studentCourse);
-    registerCourseStudent(highStudentCourse);
-
-
-    System.out.println("===================");
-    System.out.println("===================");
-    System.out.println("===================");
-
-    registerCourseWorker(personCourse);
-    registerCourseWorker(workerCourse);
+    //    Course<Person> personCourse = new Course<>("일반인", 5);
+    //    personCourse.add(new Person("일반인"));
+    //    personCourse.add(new Worker("직장인"));
+    //    personCourse.add(new Student("학생"));
+    //    personCourse.add(new HighStudent("고등학생"));
+    //
+    //    Course<Worker> workerCourse = new Course<>("직장인과정", 5);
+    //    workerCourse.add(new Worker("직장인"));
+    //
+    //    Course<Student> studentCourse = new Course<>("학생과정", 5);
+    //    studentCourse.add(new Student("학생"));
+    //    studentCourse.add(new HighStudent("고등학생"));
+    //
+    //    Course<HighStudent> highStudentCourse = new Course<>("고등학생과정", 5);
+    //    highStudentCourse.add(new HighStudent("고등학생"));
+    //
+    //    registerCourse(personCourse);
+    //    registerCourse(workerCourse);
+    //    registerCourse(studentCourse);
+    //    registerCourse(highStudentCourse);
+    //
+    //    System.out.println("===================");
+    //    System.out.println("===================");
+    //    System.out.println("===================");
+    //
+    //    registerCourseStudent(studentCourse);
+    //    registerCourseStudent(highStudentCourse);
+    //
+    //
+    //    System.out.println("===================");
+    //    System.out.println("===================");
+    //    System.out.println("===================");
+    //
+    //    registerCourseWorker(personCourse);
+    //    registerCourseWorker(workerCourse);
     // ----------------- 3교시 ---------------------------
+    // ----------------- 4교시 ---------------------------
+
+    //    ChildProduct<Tv,String,String> product = new ChildProduct<>();
+    //    product.setKind(new Tv());
+    //    product.setModel("smart TV");
+    //    product.setCompany("Samsung");
+    //
+    //    StorageImpl<Tv> tvStorage = new StorageImpl<>(100);
+    //    tvStorage.add(new Tv(), 0);
+
+    // ----------------- 4교시 ---------------------------
   }
 
   public static <T extends Number> int compare(T t1, T t2) {
