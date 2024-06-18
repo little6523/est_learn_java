@@ -58,6 +58,29 @@ public class Test {
     //    tvStorage.add(new Tv(), 0);
 
     // ----------------- 4교시 ---------------------------
+    // ----------------- 5교시 ---------------------------
+
+    List<String> arraylist = new ArrayList<>();
+    arraylist.add("Honggildong");
+    arraylist.add("Honggildong2");
+    arraylist.add("Honggildong2");
+    arraylist.add("Honggildong2");
+    arraylist.add("Honggildong2");
+    arraylist.add("Honggildong2");
+
+    arraylist.remove("홍길동2");
+
+    arraylist.removeIf((s)-> s.equals("홍길동2"));
+
+    for (int i = 0; i < arraylist.size(); i++) {
+      System.out.println(arraylist.get(i));
+    }
+    System.out.println("========================");
+    for (String str : arraylist) {
+      System.out.println(str);
+    }
+
+    // ----------------- 5교시 ---------------------------
   }
 
   public static <T extends Number> int compare(T t1, T t2) {
