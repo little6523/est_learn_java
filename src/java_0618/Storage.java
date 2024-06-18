@@ -1,3 +1,5 @@
+package java_0618;
+
 public interface Storage<T> {
 
     void add(T item, int index);

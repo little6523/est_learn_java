@@ -1,3 +1,5 @@
+package java_0618;
+
 public class Course<T> {
   private String name;
   private T[] students;

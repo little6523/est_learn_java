@@ -28,7 +28,7 @@ public class Java_20240613 {
     //    dog.sleep(100);
     // ------------------------- 2교시 -------------------------
     // ------------------------- 3교시 -------------------------
-    //    java_0613.Student student = new java_0613.Student("승조", "a", 1);
+    //    java_0613.java_0618.Student student = new java_0613.java_0618.Student("승조", "a", 1);
     //
     //    System.out.println(student.name);
     //    System.out.println(student.ssn);

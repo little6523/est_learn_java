@@ -1,3 +1,5 @@
+package java_0618;
+
 public class Person {
 
     private String name;

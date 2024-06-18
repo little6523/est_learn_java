@@ -1,3 +1,5 @@
+package java_0618;
+
 public class Product<T, M> {
 
   private T kind;

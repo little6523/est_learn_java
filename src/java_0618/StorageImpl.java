@@ -1,3 +1,5 @@
+package java_0618;
+
 public class StorageImpl<T> implements Storage<T>{
 
     private T[] array;
