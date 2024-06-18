@@ -1,6 +1,6 @@
 package java_0617;
 
-public interface Tier {
+public interface Tire {
 
     public String getTire();
 }

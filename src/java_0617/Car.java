@@ -1,3 +1,3 @@
 package java_0617;
 
-public interface Car extends Tier, Engine, Navi{}
+public interface Car extends Tire, Engine, Navi{}
