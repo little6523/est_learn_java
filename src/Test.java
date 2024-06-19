@@ -143,24 +143,58 @@ public class Test {
     //    map.clear();
     //    System.out.println("총 Entry 수: " + map.size());
 
-    HashMap<Student, Integer> students = new HashMap<>();
-    Student student1 = new Student(1, "가나다");
-    Student student2 = new Student(2, "라마바");
-    Student student3 = new Student(3, "아자차");
-    Student student4 = new Student(4, "카타파");
-
-    students.put(student1, 100);
-    students.put(student2, 90);
-    students.put(student3, 80);
-    students.put(student4, 70);
-
-    Set<Map.Entry<Student, Integer>> studentsSet = students.entrySet();
-    for (Map.Entry<Student, Integer> entry : studentsSet) {
-      Student key = entry.getKey();
-      Integer value = entry.getValue();
-      System.out.println("\t" + key.name + ": " + value);
-    }
+    //    Map<Student, Integer> students = new HashMap<>();
+    //
+    //    students.put(new Student(1, "가나다"), 100);
+    //    students.put(new Student(2, "라마바"), 100);
+    //    students.put(new Student(3, "사아자"), 100);
+    //    students.put(new Student(4, "차카타"), 100);
+    //    students.put(new Student(5, "파하하"), 100);
+    //
+    //    System.out.println(students.size());
+    //
+    //    Set<Map.Entry<Student, Integer>> studentsSet = students.entrySet();
+    //    for (Map.Entry<Student, Integer> entry : studentsSet) {
+    //      String key = entry.getKey().getName();
+    //      int no = entry.getKey().getNo();
+    //      Integer value = entry.getValue();
+    //      System.out.println("\t" + key + ": " + no);
+    //    }
 
     // ----------------- 4교시 -------------------------
+    // ----------------- 5교시 -------------------------
+
+    Map<String, String> map = new Hashtable<>();
+    Scanner sc = new Scanner(System.in);
+
+    map.put("spring", "qwer");
+    map.put("summer", "qwer1234");
+    map.put("fall", "qwer123");
+    map.put("winter", "qwer123");
+
+    while (true) {
+      System.out.println("아이디와 비밀번호를 입력해주세요.");
+      System.out.println("아이디 : ");
+      String id = sc.nextLine();
+
+      System.out.println("비밀번호 : ");
+      String password = sc.nextLine();
+
+      System.out.println("===============");
+
+      if (map.containsKey(id)) {
+        String mapPassword = map.get(id);
+        if (mapPassword.equals(password)) {
+          System.out.println("로그인에 성공했습니다.");
+          break;
+        } else {
+          System.out.println("비밀번호가 틀렸습니다.");
+        }
+
+      } else {
+        System.out.println("입력하신 아이디가 존재하지 않습니다.");
+      }
+    }
+    // ----------------- 5교시 -------------------------
   }
 }
