@@ -1,3 +1,5 @@
+package java_0619;
+
 public class Message {
     private String command;
     private String to;

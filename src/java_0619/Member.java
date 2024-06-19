@@ -1,3 +1,5 @@
+package java_0619;
+
 public class Member {
   String name;
   int age;

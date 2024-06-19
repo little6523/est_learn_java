@@ -21,14 +21,14 @@ public class Java_0618 {
     //    java_0618.Course<java_0618.Person> personCourse = new java_0618.Course<>("일반인", 5);
     //    personCourse.add(new java_0618.Person("일반인"));
     //    personCourse.add(new java_0618.Worker("직장인"));
-    //    personCourse.add(new java_0618.Student("학생"));
+    //    personCourse.add(new java_0618.java_0619.Student("학생"));
     //    personCourse.add(new java_0618.HighStudent("고등학생"));
     //
     //    java_0618.Course<java_0618.Worker> workerCourse = new java_0618.Course<>("직장인과정", 5);
     //    workerCourse.add(new java_0618.Worker("직장인"));
     //
-    //    java_0618.Course<java_0618.Student> studentCourse = new java_0618.Course<>("학생과정", 5);
-    //    studentCourse.add(new java_0618.Student("학생"));
+    //    java_0618.Course<java_0618.java_0619.Student> studentCourse = new java_0618.Course<>("학생과정", 5);
+    //    studentCourse.add(new java_0618.java_0619.Student("학생"));
     //    studentCourse.add(new java_0618.HighStudent("고등학생"));
     //
     //    java_0618.Course<java_0618.HighStudent> highStudentCourse = new

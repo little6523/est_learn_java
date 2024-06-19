@@ -1,3 +1,5 @@
+package java_0619;
+
 public class Coin {
 
     private int value;

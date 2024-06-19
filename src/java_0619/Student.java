@@ -1,3 +1,5 @@
+package java_0619;
+
 import java.util.Objects;
 
 public class Student {
