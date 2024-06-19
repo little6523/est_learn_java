@@ -164,37 +164,87 @@ public class Test {
     // ----------------- 4교시 -------------------------
     // ----------------- 5교시 -------------------------
 
-    Map<String, String> map = new Hashtable<>();
-    Scanner sc = new Scanner(System.in);
+    //    Map<String, String> map = new Hashtable<>();
+    //    Scanner sc = new Scanner(System.in);
+    //
+    //    map.put("spring", "qwer");
+    //    map.put("summer", "qwer1234");
+    //    map.put("fall", "qwer123");
+    //    map.put("winter", "qwer123");
+    //
+    //    while (true) {
+    //      System.out.println("아이디와 비밀번호를 입력해주세요.");
+    //      System.out.println("아이디 : ");
+    //      String id = sc.nextLine();
+    //
+    //      System.out.println("비밀번호 : ");
+    //      String password = sc.nextLine();
+    //
+    //      System.out.println("===============");
+    //
+    //      if (map.containsKey(id)) {
+    //        String mapPassword = map.get(id);
+    //        if (mapPassword.equals(password)) {
+    //          System.out.println("로그인에 성공했습니다.");
+    //          break;
+    //        } else {
+    //          System.out.println("비밀번호가 틀렸습니다.");
+    //        }
+    //
+    //      } else {
+    //        System.out.println("입력하신 아이디가 존재하지 않습니다.");
+    //      }
+    //    }
 
-    map.put("spring", "qwer");
-    map.put("summer", "qwer1234");
-    map.put("fall", "qwer123");
-    map.put("winter", "qwer123");
+    // ----------------- 5교시 -------------------------
+    // ----------------- 6교시 -------------------------
 
-    while (true) {
-      System.out.println("아이디와 비밀번호를 입력해주세요.");
-      System.out.println("아이디 : ");
-      String id = sc.nextLine();
+    //    Stack<Coin> coinStack = new Stack<>();
+    //
+    //    coinStack.push(new Coin(100));
+    //    coinStack.push(new Coin(500));
+    //    coinStack.push(new Coin(10));
+    //    coinStack.push(new Coin(50));
+    //
+    //    while (!coinStack.isEmpty()) {
+    //      Coin coin = coinStack.pop();
+    //      System.out.println(coin.getValue());
+    //    }
+    //
+    //    Queue<Coin> coinQueue = new LinkedList<>();
+    //    coinQueue.offer(new Coin(100));
+    //    coinQueue.offer(new Coin(500));
+    //    coinQueue.offer(new Coin(10));
+    //    coinQueue.offer(new Coin(50));
+    //    while (!coinQueue.isEmpty()) {
+    //      Coin coin = coinQueue.poll();
+    //      System.out.println(coin.getValue());
+    //    }
 
-      System.out.println("비밀번호 : ");
-      String password = sc.nextLine();
+    Queue<Message> messageQueue = new LinkedList<>();
 
-      System.out.println("===============");
+    messageQueue.offer(new Message("sendMail", "홍길동"));
+    messageQueue.offer(new Message("sendSms", "제니"));
+    messageQueue.offer(new Message("sendKakaoTalk", "리사"));
+    messageQueue.offer(new Message("sendWeeklyQuiz", "김승조"));
 
-      if (map.containsKey(id)) {
-        String mapPassword = map.get(id);
-        if (mapPassword.equals(password)) {
-          System.out.println("로그인에 성공했습니다.");
+    while (!messageQueue.isEmpty()) {
+      Message message = messageQueue.poll();
+      switch (message.getCommand()) {
+        case "sendMail":
+          System.out.println(message.getTo() + "메일을 보냅니다.");
           break;
-        } else {
-          System.out.println("비밀번호가 틀렸습니다.");
-        }
-
-      } else {
-        System.out.println("입력하신 아이디가 존재하지 않습니다.");
+        case "sendSms":
+          System.out.println(message.getTo() + "SMS를 보냅니다.");
+          break;
+        case "sendKakaoTalk":
+          System.out.println(message.getTo() + "카톡을 보냅니다.");
+          break;
+        default:
+          System.out.println(message.getTo() + "아무거나 보냅니다.");
+          break;
       }
     }
-    // ----------------- 5교시 -------------------------
+    // ----------------- 6교시 -------------------------
   }
 }
