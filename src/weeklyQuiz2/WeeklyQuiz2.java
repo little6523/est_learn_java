@@ -1,48 +1,49 @@
 package weeklyQuiz2;
 
+import java.time.LocalDate;
+
 public class WeeklyQuiz2 {
 
-  static final int INITIAL_PRODUCT_LIST_SIZE = 10;
+  static final int INITIAL_PRODUCT_LIST_SIZE = 5;
 
   public static void main(String[] args) {
-    PremiumShoppingMall premiumShoppingMall =
-            new PremiumShoppingMall(INITIAL_PRODUCT_LIST_SIZE);
-
-    ShoppingMallScanner smScanner = new ShoppingMallScanner();
-    int selectFunction, selectProduct;
+    PremiumShoppingMall premiumShoppingMall = new PremiumShoppingMall(INITIAL_PRODUCT_LIST_SIZE);
 
     System.out.println("프리미엄 쇼핑몰에 오신 것을 환영합니다!!");
-    while (true) {
-      System.out.println("이용하실 기능을 선택하세요. [1. 제품 추가 | 2. 제품 목록 출력 | 3. 제품 삭제 | 4. 종료]");
-      selectFunction = smScanner.selectNumber(1, 4);
-      if (selectFunction == 4) {
-        System.out.println("쇼핑몰 프로그램을 종료합니다.");
-        break;
-      }
-      if (selectFunction == 1) {
-        System.out.println("제품 종류 [1. 의류 | 2. 전자제품 | 3.식품 | 4. 취소]");
-        selectProduct = smScanner.selectNumber(1, 4);
+    System.out.println("----- 현재 제품 리스트의 최대 용량: " + premiumShoppingMall.getSize() + " -----");
+    Clothing clothing1 = new Clothing("shirts", 10000, 20, "XXL");
+    Clothing clothing2 = new Clothing("pants", 30000, 11, "M");
+    Clothing clothing3 = new Clothing("hat", 15000, 8, "L");
 
-        if (selectProduct == 4) {
-          continue;
-        }
-        premiumShoppingMall.manageProductList(
-                smScanner.createProduct(selectProduct));
-      }
+    Electronics electronics1 = new Electronics("iPhone", 1500000, 14, "Apple");
+    Electronics electronics2 = new Electronics("G2", 800000, 2, "LG");
+    Electronics electronics3 = new Electronics("Galaxy", 1200000, 10, "Samsung");
 
-      if (selectFunction == 2) {
-        premiumShoppingMall.manageProductList();
-      }
+    Food food1 = new Food("김밥", 5000, 15, LocalDate.of(2024, 6, 21));
+    Food food2 = new Food("떢볶이", 6000, 30, LocalDate.of(2024, 6, 29));
+    Food food3 = new Food("라면", 5500, 40, LocalDate.of(2024, 6, 27));
 
-      if (selectFunction == 3) {
-        premiumShoppingMall.manageProductList();
-        if (premiumShoppingMall.getNumberOfProducts() == 0) {
-          continue;
-        }
-        System.out.print("삭제할 제품 번호: ");
-        int deleteIdx = smScanner.selectNumber(1, premiumShoppingMall.getNumberOfProducts());
-        premiumShoppingMall.manageProductList(deleteIdx);
-      }
-    }
+    premiumShoppingMall.addProduct(clothing1);
+    premiumShoppingMall.addProduct(clothing2);
+    premiumShoppingMall.addProduct(clothing3);
+    premiumShoppingMall.addProduct(electronics1);
+    premiumShoppingMall.addProduct(electronics2); // <- 바구니 최대 사이즈 도달
+
+    premiumShoppingMall.addProduct(electronics3); // <- 바구니 사이즈 증가
+    premiumShoppingMall.addProduct(food1);
+    premiumShoppingMall.addProduct(food2);
+    premiumShoppingMall.addProduct(food3);
+
+    premiumShoppingMall.displayProducts();
+
+    premiumShoppingMall.removeProduct(clothing1);
+    premiumShoppingMall.removeProduct("iPhone");
+
+    premiumShoppingMall.displayProducts();
+
+    premiumShoppingMall.removeProduct(clothing3);
+    premiumShoppingMall.removeProduct("G2");
+
+    premiumShoppingMall.displayProducts();
   }
 }

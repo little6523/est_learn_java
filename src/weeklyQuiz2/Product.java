@@ -1,9 +1,11 @@
 package weeklyQuiz2;
 
+import java.io.UnsupportedEncodingException;
+
 public class Product {
 
-  private final String name; // 제품명
-  private final int price; // 가격
+  private String name; // 제품명
+  private double price; // 가격
   private int stock; // 재고량
 
   public Product(String name, int price, int stock) {
@@ -21,11 +23,33 @@ public class Product {
     return stock;
   }
 
-  public int getPrice() {
+  public double getPrice() {
     return price;
   }
 
   public String getName() {
     return name;
   }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setPrice(double price) {
+    this.price = price;
+  }
+
+  public void setStock(int stock) {
+    this.stock = stock;
+  }
+
+  public static int getPrintfStrLength(int formatSize, String str) throws UnsupportedEncodingException {
+    return formatSize - (getByteLength(str) - str.length());
+  }
+
+  public static int getByteLength(String str) throws UnsupportedEncodingException {
+    return str.getBytes("euc-kr").length;
+  }
+
+  public void print() {}
 }
