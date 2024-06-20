@@ -1,4 +1,7 @@
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Test {
   public static void main(String[] args) throws InterruptedException {
@@ -33,10 +36,10 @@ public class Test {
     //
     //    callList(list);
 
-    List<Integer> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
-
-    numbers.removeIf(integer -> integer % 2 == 0);
-    System.out.println(numbers);
+    //    List<Integer> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+    //
+    //    numbers.removeIf(integer -> integer % 2 == 0);
+    //    System.out.println(numbers);
 
     //    Iterator<Integer> iterator = numbers.iterator();
     //
@@ -48,6 +51,46 @@ public class Test {
     //    }
     //    System.out.println(numbers);
     // -------------------- 4교시 --------------------
+    // -------------------- 5교시 --------------------
+    //    List<Integer> numbers = new ArrayList<>(Arrays.asList(3, 1, 10, 9, 5, 20));
+
+    //    numbers.stream().filter(integer -> integer % 2 == 0);
+    //    numbers.stream().map(integer -> integer * 2);
+    //    numbers.stream().sorted();
+
+    //    numbers.stream()
+    //        .filter(integer -> integer % 2 == 0)
+    //        .forEach(integer -> System.out.println(integer));
+
+    //    List<Integer> collect =
+    //        numbers.stream().map(integer -> integer * 2).collect(Collectors.toList());
+    //
+    //    for (int i : collect) {
+    //      System.out.println(i);
+    //    }
+
+    //    numbers.stream().sorted().forEach(integer -> System.out.println(integer));
+
+    //    List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    //    List<Integer> num = numbers.stream().filter(integer -> integer % 2 !=
+    // 0).collect(Collectors.toList());
+    //    System.out.println(num);
+
+    //    numbers.stream()
+    //        .filter(integer -> integer % 2 != 0)
+    //        .collect(Collectors.toList())
+    //        .forEach(integer -> System.out.println(integer));
+
+    //    numbers.stream()
+    //        .filter(integer -> integer % 2 == 1)
+    //        .forEach(integer -> System.out.println(integer));
+
+    List<String> words = Arrays.asList("Java", "Stream", "API", "Example");
+    words.stream()
+            .filter(string -> string.length() <= 5)
+            .forEach(string -> System.out.println(string));
+
+    // -------------------- 5교시 --------------------
   }
 
   public static void callList(List<Integer> integerList) {
