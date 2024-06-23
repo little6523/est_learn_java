@@ -1,3 +1,5 @@
+package java_0620;
+
 public class MyThread extends Thread {
 
   private String name;

@@ -1,8 +1,10 @@
-public class MyRnnable implements Runnable {
+package java_0620;
+
+public class MyRunnable implements Runnable {
 
   private int number;
 
-  public MyRnnable(int number) {
+  public MyRunnable(int number) {
     this.number = number;
   }
 
