@@ -3,7 +3,7 @@ import java.util.List;
 
 public class BookShelf<T> implements BookManager<T> {
 
-  private List<Book<T>> books; // Book 객체들을 저장하는 ArrayList
+  private ArrayList<Book<T>> books; // Book 객체들을 저장하는 ArrayList
 
   // 기본 생성자
   public BookShelf() {
@@ -23,21 +23,27 @@ public class BookShelf<T> implements BookManager<T> {
     }
     if (isPossible) {
       books.add(book);
-      System.out.println("책이 추가되었습니다.");
+      System.out.println("BookShelf에 책이 추가되었습니다.");
     }
   }
 
   // 매개변수로 전달받은 도서를 books에서 삭제
   @Override
   public void removeBook(Book<T> book) {
+    boolean isPossible = false;
     for (int i = 0; i < books.size(); i++) {
       Book<T> myBook = books.get(i);
       if (myBook.getTitle().equals(book.getTitle())
       && myBook.getAuthor().equals(book.getAuthor())
       && myBook.getIdentifier().equals(book.getIdentifier())) {
         books.remove(i);
+        isPossible = true;
+        System.out.println(myBook.getTitle() + " 책이 삭제 되었습니다.");
         break;
       }
+    }
+    if (!isPossible) {
+      System.out.println("입력하신 책 정보와 일치하는 책이 없어 삭제할 수 없습니다.");
     }
   }
 

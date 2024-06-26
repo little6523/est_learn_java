@@ -12,7 +12,18 @@ public class BookStack<T> {
 
   // 매개변수로 전달받은 도서를 Stack의 맨 위에 추가
   public void pushBook(Book<T> book) {
-    books.push(book);
+    boolean isPossible = true;
+    for (Book<T> b : books) {
+      if (b.getIdentifier().equals(book.getIdentifier())) {
+        System.out.println("해당 식별자로 책을 추가할 수 없습니다.");
+        isPossible = false;
+        break;
+      }
+    }
+    if (isPossible) {
+      books.push(book);
+      System.out.println("BookStack에 책이 추가되었습니다.");
+    }
   }
 
   // Stack의 맨 위에 있는 도서를 제거하고 반환

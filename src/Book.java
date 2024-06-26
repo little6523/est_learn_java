@@ -28,5 +28,6 @@ public class Book<T> {
     System.out.println("Title: " + title);
     System.out.println("Author: " + author);
     System.out.println("Identifier: " + identifier);
+    System.out.println();
   }
 }

@@ -1,4 +1,5 @@
 import java.util.EmptyStackException;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -46,9 +47,10 @@ public class BookMain {
             System.out.print("검색할 책의 제목: ");
             title = scanner.nextLine();
             List<Book<String>> booksSearchedByTitle = bookShelf.searchByTitle(title);
-            System.out.println("제목으로 검색을 수행한 결과입니다.");
+            System.out.println("제목으로 검색을 수행한 결과입니다.\n");
+            System.out.println("*********************************\n");
             booksSearchedByTitle.forEach(book -> book.printInfo());
-            System.out.println();
+            System.out.println("*********************************");
 
             break;
 
@@ -58,24 +60,29 @@ public class BookMain {
             author = scanner.nextLine();
             List<Book<String>> booksAuthorByTitle = bookShelf.searchByAuthor(author);
             System.out.println("저자로 검색을 수행한 결과입니다.");
+            System.out.println("*********************************\n");
             booksAuthorByTitle.forEach(book -> book.printInfo());
-            System.out.println();
+            System.out.println("*********************************");
 
             break;
 
           case 4:
             // BookStack에서 맨 위의 도서를 확인하고 (peekBook), 해당 도서의 정보를 출력
+            System.out.println("책 스택에서 peek를 수행한 결과입니다.");
             Book<Integer> peekedBookOfStack = bookStack.peekBook();
+            System.out.println("*********************************\n");
             peekedBookOfStack.printInfo();
-            System.out.println();
+            System.out.println("*********************************");
 
             break;
 
           case 5:
             // BookStack에서 도서를 꺼내고 (popBook), 꺼낸 도서의 정보를 출력
+            System.out.println("책 스택에서 pop을 수행한 결과입니다.");
             Book<Integer> poppedBookOfStack = bookStack.popBook();
+            System.out.println("*********************************\n");
             poppedBookOfStack.printInfo();
-            System.out.println();
+            System.out.println("*********************************");
 
             break;
 
@@ -84,18 +91,25 @@ public class BookMain {
             if (bookStack.isEmpty()) {
               System.out.println("책 스택이 비었습니다!");
             }
+            else {
+              System.out.println("책 스택에 책이 1개 이상 존재합니다.");
+            }
 
             break;
 
           case 7:
             // 책 삭제
+            System.out.print("제목: ");
             title = scanner.nextLine();
+
+            System.out.print("저자: ");
             author = scanner.nextLine();
+
+            System.out.print("식별자: ");
             identifier = scanner.nextLine();
 
             Book<String> book = new Book<>(title, author, identifier);
             bookShelf.removeBook(book);
-            System.out.println(title + " 책이 삭제 되었습니다.");
 
             break;
 
@@ -107,7 +121,12 @@ public class BookMain {
             break;
         }
       } catch (EmptyStackException e) {
+        // 빈 스택 예외처리
         System.out.println("BookStack is Empty!!!");
+      } catch (InputMismatchException e) {
+        // 타입에 맞지 않는 입력 예외처리
+        System.out.println("잘못된 입력이에요. 올바르게 입력해주세요!");
+        scanner.nextLine();
       }
     }
   }
